@@ -1,0 +1,55 @@
+# Xcode
+.DS_Store
+.DS_Store?
+*.swp
+*~.nib
+*.swp
+*.lock
+.profile
+.profile.*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# macOS
+*.DS_Store
+
+# Xcode
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+DerivedData
+*.hmap
+*.ipa
+*.xcarchive
+*.xcworkspace
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcuserdata
+*.xcuserdatad
+*.xcscmblueprint
+*.xcscheme
+*.xcworkspacedata
+*.xcuserstate
+*.xcproj
+.DS_Store
+xcuserdata/
+
+# CocoaPods
+Pods/
+
+
+# Swift Package Manager
+Package.resolved
+
+# Packaging log
+iOSApp/Packaging.log

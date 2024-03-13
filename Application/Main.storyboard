@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Iz-HH-MHN">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FaceCaptureViewController-->
+        <scene sceneID="VgR-3y-BFQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ComponentCapture" referencedIdentifier="FaceCaptureViewController" id="9XZ-DK-dyE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Q3Y-w6-DbR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efq-vW-fCx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943" y="-706"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="MainViewController" customModule="NubariumSDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLU-kW-KfU">
+                                <rect key="frame" x="36" y="103" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zH5-GJ-X4j">
+                                <rect key="frame" x="36" y="82" width="252" height="162.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Esta es una aplicación de demostración de un proceso de registro y validación de persona, integrando una Prueba de Vida con Captura Facial y validación de Identificaciones, solo presiona INICIAR PRUEBA para verlo en acción.</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJZ-Mf-P1T">
+                                <rect key="frame" x="28" y="495" width="264" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Iniciar Prueba"/>
+                                <connections>
+                                    <action selector="startFaceCapture:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="grz-tU-evT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zH5-GJ-X4j" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="82" id="4qG-EI-79H"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zH5-GJ-X4j" secondAttribute="trailing" constant="32" id="8BB-9s-nD1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="IJZ-Mf-P1T" secondAttribute="trailing" constant="28" id="BHp-Rd-jju"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="IJZ-Mf-P1T" secondAttribute="bottom" constant="39" id="I0L-Gt-15X"/>
+                            <constraint firstItem="zH5-GJ-X4j" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="36" id="UAn-No-nbh"/>
+                            <constraint firstItem="IJZ-Mf-P1T" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="28" id="hy8-xW-0N3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="haT-fg-9Qf"/>
+                    <connections>
+                        <segue destination="9XZ-DK-dyE" kind="show" identifier="ComponentCapture" id="odv-UC-tYG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58.125" y="-706.69014084507046"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nLv-Mj-e6Y">
+            <objects>
+                <navigationController id="6Iz-HH-MHN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ohg-ww-CGz">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="5Wq-C3-Sr7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ku-bo-v7P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1138" y="-568"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

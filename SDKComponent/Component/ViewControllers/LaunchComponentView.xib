@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LaunchComponentView" customModule="NubariumSDK" customModuleProvider="target">
+            <connections>
+                <outlet property="animationView" destination="LjD-Hk-cHl" id="dmR-Ig-ERY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l57-o5-YVJ">
+                    <rect key="frame" x="21" y="98" width="372" height="91"/>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">Para realizar la prueba de vida y la captura facial es necesario que enfoque la camara directamente en su rostro y evite moverse de manera brusca para un mejor enfoque.</string>
+                            <attributes>
+                                <font key="NSFont" metaFont="system" size="19"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LjD-Hk-cHl" customClass="LottieAnimationView" customModule="Lottie">
+                    <rect key="frame" x="33" y="302" width="340" height="245"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="face_capture"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUj-PF-RfI">
+                    <rect key="frame" x="116" y="624" width="158" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="INICIAR"/>
+                    <connections>
+                        <action selector="action:" destination="-1" eventType="touchUpInside" id="Ns4-vm-UOG"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prueba de vida y Captura Facial" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niR-vH-uEJ">
+                    <rect key="frame" x="16" y="59" width="403" height="31"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <keyboardLayoutGuide key="keyboard" id="Yqt-g0-5be"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="l57-o5-YVJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="21" id="2YA-Wj-pDg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="l57-o5-YVJ" secondAttribute="trailing" constant="21" id="3GI-Ci-Ttk"/>
+                <constraint firstItem="l57-o5-YVJ" firstAttribute="top" secondItem="niR-vH-uEJ" secondAttribute="bottom" constant="8" id="Agk-MB-v8l"/>
+                <constraint firstAttribute="trailing" secondItem="niR-vH-uEJ" secondAttribute="trailing" constant="-5" id="CeR-G7-dqj"/>
+                <constraint firstItem="l57-o5-YVJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="HaW-Pv-MvY"/>
+                <constraint firstItem="l57-o5-YVJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="21" id="IsO-Jr-umI"/>
+                <constraint firstItem="niR-vH-uEJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="11" id="LOl-VH-CF8"/>
+                <constraint firstItem="niR-vH-uEJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="bbg-7o-DTY"/>
+                <constraint firstItem="niR-vH-uEJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="iSe-tO-aDk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="l57-o5-YVJ" secondAttribute="trailing" constant="21" id="zqP-ic-1U4"/>
+            </constraints>
+            <point key="canvasLocation" x="128.98550724637681" y="-13.392857142857142"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="LjD-Hk-cHl"/>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

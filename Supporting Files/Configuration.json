@@ -1,0 +1,424 @@
+{
+    "version": "1.1.1",
+    "components":[
+        {
+            "type": "FaceCapture",
+            "tasks":[
+                {
+                    "name": "CapturaFacial",
+                    "area":{
+                        "show": true,
+                        "maskFill": "DefaultBackground",
+                        "fillColor":"#ffcccc",
+                        "ratio": 1.33333
+                    },
+                    "orientation": "Portrait",
+                    "shape": "Oval",
+                    "type": "FaceCapture",
+                    "timeout": 30,
+                    "messages": [
+                        {   "id":"keep",
+                            "msg": ".nbm_facial_msg_keep",
+                            "textColor": ".modeTextColor",
+                            "borderColor": ".modeColor"
+                        },
+                        {   "id":"outbounds",
+                            "msg": ".nbm_facial_msg_face_outside",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"noFace",
+                            "msg": ".nbm_facial_msg_no_face",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"manyFaces",
+                            "msg": ".nbm_facial_msg_many_faces",
+                            "textColor": "red",
+                            "borderColor": "red"
+                        },
+                        {   "id":"lowAvg",
+                            "msg": ".nbm_facial_msg_low_evaluation",
+                            "textColor": "red",
+                            "borderColor": "red"
+                        },
+                        {   "id":"farAway",
+                            "msg": ".nbm_facial_msg_far_away",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"tooClose",
+                            "msg": ".nbm_facial_msg_too_close",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"detectFail",
+                            "msg": ""
+                        },
+                        {   "id":"staticEye",
+                            "textColor": "red",
+                            "borderColor": "red",
+                            "msg": ".nbm_facial_msg_static_eye"
+                        },
+                        {   "id":"unknown",
+                            "msg": ".nbm_facial_msg_unknown",
+                            "textColor": "red",
+                            "borderColor": "red"
+                        },
+                        {   "id":"warnings",
+                            "msg": ""
+                        },
+                        {   "id":"processing",
+                            "msg": ".nbm_facial_msg_processing",
+                            "textColor": "blue",
+                            "borderColor": "blue"
+                        },
+                        {   "id":"align",
+                            "msg": ".nbm_facial_msg_align_face",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"success",
+                            "msg": ".nbm_facial_msg_captured",
+                            "textColor": "green",
+                            "borderColor": "green"
+                        },
+                        {   "id":"clear",
+                            "msg": " ",
+                            "textColor": ".modeColor",
+                            "borderColor": "modeColor"
+                        },
+                        {   "id":"start",
+                            "msg": ".nbm_facial_msg_init_face",
+                            "textColor": ".modeColor",
+                            "borderColor": ".modeColor"
+                        },
+                        {   "id":"maxValidations",
+                            "msg": ".nbm_facial_msg_max_validations",
+                            "textColor": "red",
+                            "borderColor": "red"
+                        },
+                        {   "id":"expired",
+                            "msg": ".nbm_facial_msg_timeout",
+                            "textColor": "red",
+                            "borderColor": "red"
+                        },
+                        {   "id":"hasGlasses",
+                            "msg": ".nbm_facial_msg_has_glasses",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"hasFacemask",
+                            "msg": ".nbm_facial_msg_has_facemask",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"hasHat",
+                            "msg": ".nbm_facial_msg_has_hat",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"notClearFace",
+                            "msg": ".nbm_facial_msg_unclear_face",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"blurred",
+                            "msg": ".nbm_facial_msg_blurred",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"veryBlurred",
+                            "msg": ".nbm_facial_msg_blurred",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"hasMask",
+                            "msg": ".nbm_facial_msg_has_facemask",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "IdCapture",
+            "tasks":[
+                {
+                    "name": "Front",
+                    "area":{
+                        "show": true,
+                        "maskFill": "DefaultBackground",
+                        "fillColor":"#ffcccc",
+                        "ratio": 1.5873
+                    },
+                    "orientation": "Landscape",
+                    "shape": "Rectangle",
+                    "type": "IdCapture",
+                    "timeout": 180,
+                    "messages": [
+                        {   "id":"keep",
+                            "msg": ".nbm_facial_msg_keep",
+                            "textColor": ".modeTextColor",
+                            "borderColor": ".modeColor"
+                        },
+                        {   "id":"outbounds",
+                            "msg": "COLOQUE SU ROSTRO DENTRO",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"noFace",
+                            "msg": "COLOQUE SU CARA",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"manyFaces",
+                            "msg": "ASEGURESE QUE SOLO SU ROSTRO ESTE PRESENTE",
+                            "textColor": "red",
+                            "borderColor": "red"
+                        },
+                        {   "id":"lowAvg",
+                            "msg": "",
+                            "textColor": "red",
+                            "borderColor": "red"
+                        },
+                        {   "id":"farAway",
+                            "msg": "ACERQUESE",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"tooClose",
+                            "msg": "ALEJESE",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"detectFail",
+                            "msg": ""
+                        },
+                        {   "id":"staticEye",
+                            "textColor": "red",
+                            "borderColor": "red",
+                            "msg": "MUEVA LOS OJOS"
+                        },
+                        {   "id":"unknown",
+                            "msg": "DESCONOCIDO",
+                            "textColor": "red",
+                            "borderColor": "red"
+                        },
+                        {   "id":"warnings",
+                            "msg": ""
+                        },
+                        {   "id":"processing",
+                            "msg": "VALIDANDO",
+                            "textColor": "blue",
+                            "borderColor": "blue"
+                        },
+                        {   "id":"align",
+                            "msg": "ALINEA TU ROSTRO AL CENTRO",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"success",
+                            "msg": "EXITO",
+                            "textColor": "green",
+                            "borderColor": "green"
+                        },
+                        {   "id":"clear",
+                            "msg": " ",
+                            "textColor": ".modeColor",
+                            "borderColor": "modeColor"
+                        },
+                        {   "id":"start",
+                            "msg": "FAVOR DE COLOCAR SU ROSTRO DENTRO DEL AREA",
+                            "textColor": ".modeColor",
+                            "borderColor": ".modeColor"
+                        },
+                        {   "id":"maxValidations",
+                            "msg": "EXCEDIO EL NUMERO DE INTENTOS",
+                            "textColor": "red",
+                            "borderColor": "red"
+                        },
+                        {   "id":"expired",
+                            "msg": "EXCEDIO EL TIEMPO DE PRUEBA",
+                            "textColor": "red",
+                            "borderColor": "red"
+                        },
+                        {   "id":"hasGlasses",
+                            "msg": "REMUEVE TUS ANTEOJOS",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"hasFacemask",
+                            "msg": "REMUEVE TU CUBREBOCAS",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"hasHat",
+                            "msg": "REMUEVE TU GORRO O SOMBRERO",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"notClearFace",
+                            "msg": "MANTEN TU ROSTROS DESPEJADO",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"blurred",
+                            "msg": "SE VE BORROSO",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"veryBlurred",
+                            "msg": "SE VE MUY BORROSO",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"hasMask",
+                            "msg": "MANTEN TU ROSTROS DESPEJADO",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        }
+                    ]
+                },
+                {
+                    "name": "Back",
+                    "area":{
+                        "show": true,
+                        "maskFill": "DefaultBackground",
+                        "fillColor":"#ffcccc",
+                        "ratio": 1.5873
+                    },
+                    "orientation": "Landscape",
+                    "shape": "Rectangle",
+                    "type": "IdCapture",
+                    "timeout": 180,
+                    "messages": [
+                        {   "id":"keep",
+                            "msg": ".nbm_facial_msg_keep",
+                            "textColor": ".modeTextColor",
+                            "borderColor": ".modeColor"
+                        },
+                        {   "id":"outbounds",
+                            "msg": "COLOQUE SU ROSTRO DENTRO",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"noFace",
+                            "msg": "COLOQUE SU CARA",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"manyFaces",
+                            "msg": "ASEGURESE QUE SOLO SU ROSTRO ESTE PRESENTE",
+                            "textColor": "red",
+                            "borderColor": "red"
+                        },
+                        {   "id":"lowAvg",
+                            "msg": "",
+                            "textColor": "red",
+                            "borderColor": "red"
+                        },
+                        {   "id":"farAway",
+                            "msg": "ACERQUESE",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"tooClose",
+                            "msg": "ALEJESE",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"detectFail",
+                            "msg": ""
+                        },
+                        {   "id":"staticEye",
+                            "textColor": "red",
+                            "borderColor": "red",
+                            "msg": "MUEVA LOS OJOS"
+                        },
+                        {   "id":"unknown",
+                            "msg": "DESCONOCIDO",
+                            "textColor": "red",
+                            "borderColor": "red"
+                        },
+                        {   "id":"warnings",
+                            "msg": ""
+                        },
+                        {   "id":"processing",
+                            "msg": "VALIDANDO",
+                            "textColor": "blue",
+                            "borderColor": "blue"
+                        },
+                        {   "id":"align",
+                            "msg": "ALINEA TU ROSTRO AL CENTRO",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"success",
+                            "msg": "EXITO",
+                            "textColor": "green",
+                            "borderColor": "green"
+                        },
+                        {   "id":"clear",
+                            "msg": " ",
+                            "textColor": ".modeColor",
+                            "borderColor": "modeColor"
+                        },
+                        {   "id":"start",
+                            "msg": "FAVOR DE COLOCAR SU ROSTRO DENTRO DEL AREA",
+                            "textColor": ".modeColor",
+                            "borderColor": ".modeColor"
+                        },
+                        {   "id":"maxValidations",
+                            "msg": "EXCEDIO EL NUMERO DE INTENTOS",
+                            "textColor": "red",
+                            "borderColor": "red"
+                        },
+                        {   "id":"expired",
+                            "msg": "EXCEDIO EL TIEMPO DE PRUEBA",
+                            "textColor": "red",
+                            "borderColor": "red"
+                        },
+                        {   "id":"hasGlasses",
+                            "msg": "REMUEVE TUS ANTEOJOS",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"hasFacemask",
+                            "msg": "REMUEVE TU CUBREBOCAS",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"hasHat",
+                            "msg": "REMUEVE TU GORRO O SOMBRERO",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"notClearFace",
+                            "msg": "MANTEN TU ROSTROS DESPEJADO",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"blurred",
+                            "msg": "SE VE BORROSO",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"veryBlurred",
+                            "msg": "SE VE MUY BORROSO",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        },
+                        {   "id":"hasMask",
+                            "msg": "MANTEN TU ROSTROS DESPEJADO",
+                            "textColor": "orange",
+                            "borderColor": "orange"
+                        }
+                    ]
+                }
+
+            ]
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+/* 
+  CustomIdCaptue.strings
+  NubariumSDK
+
+  Created by Amilcar Flores on 09/02/23.
+  Copyright © 2023 Google Inc. All rights reserved.
+*/
+
+
+// ID Messages
+"nbm_id_title" = "Captura de Identificación";
+"nbm_id_instructions" = "Favor de capturar ambos lados de su credencial de elector.";
+
+
+"nbm_id_title_short" = "Captura facial";
+"nbm_id_preview_title" = "Confirmar";
+"nbm_id_preview_instructions" = "Al realizar la validación tomamos una fotografía que usaremos en nuestro proceso de validación, si deseas, puedes reintentarlo oprimiendo en Reintentar, de lo contrarío sólo oprime el boton para Continuar.";
+"nbm_id_confirm_description" = "Nubarium Liveness";
+"nbm_id_instructions_liveness" = "Para realizar la prueba de vida y la captura facial es necesario que enfoque la camara directamente en su rostro y evite moverse de manera brusca para un mejor enfoque.";
+"nbm_id_instructions_list_liveness" = "Nubarium Liveness";
+"nbm_id_confirm_description_liveness" = "Nubarium Liveness";
+
+"nbm_id_btn_back" = "Regresar";
+
+"nbm_id_btn_return" = "Regresar";
+"nbm_id_btn_start" = "Iniciar";
+"nbm_id_btn_accept" = "Aceptar";
+"nbm_id_btn_cancel" = "Cancelar";
+"nbm_id_btn_validate" = "Validar";
+"nbm_id_btn_finish" = "Finalizar";
+
+"nbm_id_btn_proceed_capture" = "CAPTURAR IDENTIFICACION";
+"nbm_id_url_help" = "https://pnsclothing.com/pages/faq";
+"nbm_id_url_video" = "";
+
+
+"nbm_id_msg_captured" = "Capturado";
+"nbm_id_msg_validating" = "ESPERA UN MOMENTO, VALIDANDO ID";
+"nbm_id_msg_center_inside" = "CENTRA EL ID DENTRO DEL RECUADRO";
+"nbm_id_msg_too_far" = "ACERCA EL ID";
+"nbm_id_msg_taking_picture" = "ESPERA UN MOMENTO, VALIDANDO ID";
+"nbm_id_msg_try_better" = "INTENTE EN UN LUGAR MEJOR ILUMINADO";
+"nbm_id_msg_no_id" = "COLOCA EL ID DENTRO DEL RECUADRO";
+"nbm_id_msg_blurred" = "ENFOQUE LA CAMARA";
+"nbm_id_msg_not_valid" = "La identificación capturada no es válida, favor de capturarla de nuevo";
+
+
+"nbm_id_msg_approved" = "Aprobado";
+"nbm_id_msg_closer" = " Acercate";
+"nbm_id_msg_get_away" = "ALEJATE UN POCO";
+"nbm_id_msg_align_face" = "Coloca tu cabeza dentro del ovalo.";
+"nbm_id_msg_look_center" = "Mira al frente.";
+"nbm_id_msg_dont_move" = "No te muevas.";
+"nbm_id_msg_multi_face" = "Solo un rostro.";
+"nbm_id_msg_no_face" = "COLOQUE SU CARA DENTRO DEL AREA";
+"nbm_id_msg_init_face" = "COLOQUE SU CARA DENTRO DEL AREA";
+"nbm_id_msg_face_outside" = "COLOQUE SU CARA EN EL AREA.";
+"nbm_id_msg_face_small" = "ACERQUE SU CARA.";
+"nbm_id_msg_not_front" = "ALINEA TU CARA AL CENTRO";
+"nbm_id_msg_static_eye" = "MIRA HACIA AL CENTRO";
+
+
+
+"nbm_id_msg_print_attack_suspect" = "NO PARECE REAL";
+"nbm_id_msg_print_attack" = "ASEGURSE DE ESTAR ALINEADO Y VER AL CENTRO";
+"nbm_id_msg_print_attack2" = "ASEGURSE DE ESTAR ALINEADO Y VER AL CENTRO";
+"nbm_id_msg_again" = "COLOQUESE DE EN UN MEJOR LUGAR E INTENTE DE NUEVO";
+
+"nbm_id_msg_recommendations_failed" = "Asegurate que te encuentras en un lugar iluminado, con la cara descubierta y mirando al frente.";
+"nbm_id_msg_wait" = "NO TE MUEVAS";

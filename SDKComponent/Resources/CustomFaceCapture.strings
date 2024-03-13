@@ -1,0 +1,86 @@
+/* 
+  CustomFaceCapture.strings
+  NubariumSDK
+
+  Created by Amilcar Flores on 09/02/23.
+  Copyright © 2023 Google Inc. All rights reserved.
+*/
+// Facial Messages
+"nbmnbmnbm_facial_title_short" = "Captura facial";
+"nbm_facial_title" = "Prueba de vida y Captura facial";
+
+"nbm_facial_preview_title" = "Confirmar";
+"nbm_facial_preview_instructions" = "Al realizar la validación tomamos una fotografía que usaremos en nuestro proceso de validación, si deseas, puedes reintentarlo oprimiendo en Reintentar, de lo contrarío sólo oprime el boton para Continuar.";
+
+"nbm_facial_instructions" = "Para realizar la prueba de vida y la captura facial es necesario que enfoque la camara directamente en su rostro y evite moverse de manera brusca para un mejor enfoque.";
+"nbm_facial_instructions_list" = "Permanezca en un lugar iluminado.|Sostenga la camara en un ángulo de 90 grados.";
+
+"nbm_facial_btn_back" = "Regresar";
+"nbm_facial_btn_return" = "Regresar";
+"nbm_facial_btn_start" = "Iniciar";
+"nbm_facial_btn_accept" = "Aceptar";
+"nbm_facial_btn_cancel" = "Cancelar";
+"nbm_facial_btn_validate" = "Validar";
+"nbm_facial_btn_finish" = "Finalizar";
+
+"nbm_facial_msg_keep" = "NO TE MUEVAS";
+"nbm_facial_msg_blurred" = "ENFOCA LA CAMARA Y NO SE MUEVA";
+"nbm_facial_msg_face_outside" = "COLOQUE SU ROSTRO DENTRO DEL OVALO";
+"nbm_facial_msg_no_face" = "COLOQUE SU ROSTRO FRENTE A LA CAMARA";
+"nbm_facial_msg_many_faces" = "ASEGURE QUE SU ROSTRO SEA EL UNICO";
+"nbm_facial_msg_far_away" = "ACERCATE UN POCO";
+"nbm_facial_msg_too_close" = "ALEJATE UN POCO";
+"nbm_facial_msg_timeout" = "EXCEDIO EL TIEMPO DE PRUEBA";
+"nbm_facial_msg_max_validations" = "EXCEDIO EL NUMERO DE INTENTOS";
+"nbm_facial_msg_unknown" = "ENFOCA LA CAMARA Y NO SE MUEVA";
+
+"nbm_facial_msg_low_evaluation"="INTENTE DE NUEVO";
+"nbm_facial_msg_processing"="VALIDANDO";
+"nbm_facial_msg_unclear_face"= "MANTEN TU ROSTROS DESPEJADO";
+
+"nbm_facial_msg_has_glasses" = "REMUEVE TUS ANTEOJOS";
+"nbm_facial_msg_has_facemask" = "REMUEVE TU CUBREBOCAS";
+"nbm_facial_msg_has_hat" = "REMUEVE TU GORRO O SOMBRERO";
+
+"nbm_facial_msg_fail" = "COLOQUESE EN UN LUGAR MEJOR ILUMINADO";
+"nbm_facial_msg_static_eye" = "ENFOQUE SU ROSTRO FRENTE A LA CAMARA";
+
+"nbm_facial_url_video" = "";
+"nbm_facial_msg_captured" = "LISTO";
+
+"nbm_facial_msg_approved" = "Aprobado";
+"nbm_facial_msg_closer" = " Acercate";
+"nbm_facial_msg_get_away" = "ALEJATE UN POCO";
+"nbm_facial_msg_align_face" = "ALINEE SU ROSTRO";
+"nbm_facial_msg_look_center" = "Mira al frente.";
+
+
+"nbm_btn_back" = "Regresar";
+
+"nbm_btn_return" = "Regresar";
+"nbm_btn_accept" = "Aceptar";
+"nbm_btn_retry" = "Reintentar";
+
+"nbm_facial_msg_init_face" = "COLOQUE SU CARA DENTRO DEL AREA";
+
+"nbm_facial_msg_face_small" = "ACERQUE SU CARA.";
+"nbm_facial_msg_not_front" = "ALINEA TU CARA AL CENTRO";
+
+"nbm_facial_confirm_description" = "Nubarium Liveness";
+
+"nbm_facial_title_liveness" = "Prueba de vida y Captura facial";
+"nbm_facial_instructions_liveness" = "Para realizar la prueba de vida y la captura facial es necesario que enfoque la camara directamente en su rostro y evite moverse de manera brusca para un mejor enfoque.";
+"nbm_facial_instructions_list_liveness" = "Nubarium Liveness";
+"nbm_facial_confirm_description_liveness" = "Nubarium Liveness";
+
+
+"nbm_facial_msg_print_attack_suspect" = "NO PARECE REAL";
+"nbm_facial_msg_print_attack" = "ASEGURSE DE ESTAR ALINEADO Y VER AL CENTRO";
+"nbm_facial_msg_print_attack2" = "2ASEGURSE DE ESTAR ALINEADO Y VER AL CENTRO";
+"nbm_facial_msg_again" = "COLOQUESE DE EN UN MEJOR LUGAR E INTENTE DE NUEVO";
+
+"nbm_facial_msg_recommendations_failed" = "Asegurate que te encuentras en un lugar iluminado, con la cara descubierta y mirando al frente.";
+"nbm_facial_msg_wait" = "NO TE MUEVAS";
+
+"nbm_facial_url_help" = "https://pnsclothing.com/pages/faq";
+
