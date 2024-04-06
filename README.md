@@ -33,7 +33,7 @@ Then, import `BiometricSDK` wherever you want to use it.
 
 ### Manually
 
-If you prefer not to use any of the aforementioned dependency managers, you can manually integrate `BiometricSDK` into your project. Simply clone the repository and drag the `Sources` folder into your project.
+You can manually integrate `BiometricSDK` into your project. Simply clone the repository and drag the `Sources` folder into your project.
 
 Integrate
 
