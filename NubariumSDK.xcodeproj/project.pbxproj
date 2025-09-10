@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F89A4D93603AB3B577E2CAA /* Pods_NubariumSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4084021ABF792BB736B0D1 /* Pods_NubariumSDK.framework */; };
 		4005EC8529A7CBC7000CD4DB /* Configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 4005EC8429A7CBC7000CD4DB /* Configuration.json */; };
 		4005EC8729A7D94F000CD4DB /* StringCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4005EC8629A7D94F000CD4DB /* StringCase.swift */; };
 		40244ED629A0050200B3A9A9 /* IdEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40244ED529A0050200B3A9A9 /* IdEvaluation.swift */; };
@@ -74,11 +73,24 @@
 		BB70D4E3209CF98500743DA7 /* ComponentCapture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB70D4E1209CF98500743DA7 /* ComponentCapture.storyboard */; };
 		BB70D4E5209CF98500743DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB70D4E4209CF98500743DA7 /* Assets.xcassets */; };
 		BB70D4E8209CF98500743DA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB70D4E6209CF98500743DA7 /* LaunchScreen.storyboard */; };
+		E58BAF2412EE94F608295A30 /* Pods_NubariumSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7299B6ACE1EAAC6DDB7C729 /* Pods_NubariumSDK.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		46D656782E6FA4AA00CA323C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		267D5B0F138B11DB8998FDF3 /* Pods-NubariumSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NubariumSDK.debug.xcconfig"; path = "Target Support Files/Pods-NubariumSDK/Pods-NubariumSDK.debug.xcconfig"; sourceTree = "<group>"; };
-		3A4084021ABF792BB736B0D1 /* Pods_NubariumSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NubariumSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F88DA83C0E4F2504315C84 /* Pods-NubariumSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NubariumSDK.debug.xcconfig"; path = "Target Support Files/Pods-NubariumSDK/Pods-NubariumSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		4005EC8429A7CBC7000CD4DB /* Configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Configuration.json; sourceTree = "<group>"; };
 		4005EC8629A7D94F000CD4DB /* StringCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCase.swift; sourceTree = "<group>"; };
 		40244ED529A0050200B3A9A9 /* IdEvaluation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdEvaluation.swift; sourceTree = "<group>"; };
@@ -149,7 +161,8 @@
 		BB70D4E4209CF98500743DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB70D4E7209CF98500743DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB70D4E9209CF98500743DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D94C8242B49DB4F9A17C7E62 /* Pods-NubariumSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NubariumSDK.release.xcconfig"; path = "Target Support Files/Pods-NubariumSDK/Pods-NubariumSDK.release.xcconfig"; sourceTree = "<group>"; };
+		C7299B6ACE1EAAC6DDB7C729 /* Pods_NubariumSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NubariumSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F94E308717F1919F23780FC2 /* Pods-NubariumSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NubariumSDK.release.xcconfig"; path = "Target Support Files/Pods-NubariumSDK/Pods-NubariumSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,21 +170,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F89A4D93603AB3B577E2CAA /* Pods_NubariumSDK.framework in Frameworks */,
+				E58BAF2412EE94F608295A30 /* Pods_NubariumSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		39340F02B6623FBA5A077C71 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3A4084021ABF792BB736B0D1 /* Pods_NubariumSDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		402B0C4F2991448200C83BEF /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,8 +364,8 @@
 		7E5A388F18ED8175F3CD34BA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				267D5B0F138B11DB8998FDF3 /* Pods-NubariumSDK.debug.xcconfig */,
-				D94C8242B49DB4F9A17C7E62 /* Pods-NubariumSDK.release.xcconfig */,
+				02F88DA83C0E4F2504315C84 /* Pods-NubariumSDK.debug.xcconfig */,
+				F94E308717F1919F23780FC2 /* Pods-NubariumSDK.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -376,7 +381,7 @@
 				BB70D4F1209D000A00743DA7 /* Supporting Files */,
 				BB70D4DB209CF98500743DA7 /* Products */,
 				7E5A388F18ED8175F3CD34BA /* Pods */,
-				39340F02B6623FBA5A077C71 /* Frameworks */,
+				D402C06088F57A27FDD5A097 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -411,6 +416,14 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D402C06088F57A27FDD5A097 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7299B6ACE1EAAC6DDB7C729 /* Pods_NubariumSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -418,12 +431,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB70D4EC209CF98500743DA7 /* Build configuration list for PBXNativeTarget "NubariumSDK" */;
 			buildPhases = (
-				9CBB5F4E67E472D27F5302CD /* [CP] Check Pods Manifest.lock */,
+				0BEFF12A71D0377CCE3E6482 /* [CP] Check Pods Manifest.lock */,
 				BB70D4D6209CF98500743DA7 /* Sources */,
 				BB70D4D8209CF98500743DA7 /* Resources */,
 				C311EA74D989B49F18E635BE /* Frameworks */,
-				EA656A2C99CDCCAB0A14A56E /* [CP] Embed Pods Frameworks */,
-				DD89B50415A6555F8E0F4C47 /* [CP] Copy Pods Resources */,
+				46D656782E6FA4AA00CA323C /* Embed Frameworks */,
+				5C3DC54D7E95A782833DD2DE /* [CP] Embed Pods Frameworks */,
+				01D5BF02E35D1BA13EB93855 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -500,7 +514,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9CBB5F4E67E472D27F5302CD /* [CP] Check Pods Manifest.lock */ = {
+		01D5BF02E35D1BA13EB93855 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NubariumSDK/Pods-NubariumSDK-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MLKitFaceDetection/GoogleMVFaceDetectorResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVFaceDetectorResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NubariumSDK/Pods-NubariumSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0BEFF12A71D0377CCE3E6482 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -522,25 +554,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DD89B50415A6555F8E0F4C47 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NubariumSDK/Pods-NubariumSDK-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MLKitFaceDetection/GoogleMVFaceDetectorResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVFaceDetectorResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NubariumSDK/Pods-NubariumSDK-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EA656A2C99CDCCAB0A14A56E /* [CP] Embed Pods Frameworks */ = {
+		5C3DC54D7E95A782833DD2DE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -781,7 +795,7 @@
 		};
 		BB70D4ED209CF98500743DA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 267D5B0F138B11DB8998FDF3 /* Pods-NubariumSDK.debug.xcconfig */;
+			baseConfigurationReference = 02F88DA83C0E4F2504315C84 /* Pods-NubariumSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -809,7 +823,7 @@
 		};
 		BB70D4EE209CF98500743DA7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D94C8242B49DB4F9A17C7E62 /* Pods-NubariumSDK.release.xcconfig */;
+			baseConfigurationReference = F94E308717F1919F23780FC2 /* Pods-NubariumSDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

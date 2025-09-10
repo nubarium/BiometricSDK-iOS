@@ -145,9 +145,10 @@ class MainViewController: UIViewController {
         print("Result", result.result)
         print("width", area.size.width)
         print("height", area.size.height)
+        print(area.convertImageToBase64String())
         
         if(result.result == "PASS"){
-            startIdCapture()
+            //startIdCapture()
         }
         //print("Size",area.size.width, faceCaptureResponse.area.size.height)
     }

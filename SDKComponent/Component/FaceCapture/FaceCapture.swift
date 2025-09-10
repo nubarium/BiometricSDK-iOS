@@ -181,7 +181,7 @@ class FaceCapture:  SdkComponent, CameraViewControllerDelegate  {
             if error.httpStatusCode == 401 || error.httpStatusCode == 403 {
                 self.onInitError!(.badCredentials, FaceCaptureInitError.badCredentials.description)
             }else{
-                self.onInitError!(.invalidStatusCode, String(error.httpStatusCode!))
+                self.onInitError!(.invalidStatusCode, String(error.httpStatusCode ?? -1))
             }
             print("error", error)
         }
@@ -219,7 +219,7 @@ class FaceCapture:  SdkComponent, CameraViewControllerDelegate  {
             if error.httpStatusCode == 401 || error.httpStatusCode == 403 {
                 self.onInitError!(.badCredentials, FaceCaptureInitError.badCredentials.description)
             }else{
-                self.onInitError!(.invalidStatusCode, String(error.httpStatusCode!))
+                self.onInitError!(.invalidStatusCode, String(error.httpStatusCode  ?? -1))
             }
             print("error", error)
         }
