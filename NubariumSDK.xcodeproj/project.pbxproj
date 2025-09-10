@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		4005EC8529A7CBC7000CD4DB /* Configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 4005EC8429A7CBC7000CD4DB /* Configuration.json */; };
 		4005EC8729A7D94F000CD4DB /* StringCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4005EC8629A7D94F000CD4DB /* StringCase.swift */; };
-		40244ED629A0050200B3A9A9 /* IdEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40244ED529A0050200B3A9A9 /* IdEvaluation.swift */; };
-		40244ED829A0052300B3A9A9 /* IdDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40244ED729A0052300B3A9A9 /* IdDetail.swift */; };
-		40244EDA29A0054D00B3A9A9 /* IdDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40244ED929A0054D00B3A9A9 /* IdDetector.swift */; };
 		402B0C4E2990CE2B00C83BEF /* Levenshtein.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402B0C4D2990CE2B00C83BEF /* Levenshtein.swift */; };
 		402B0C5229917C6100C83BEF /* FaceFeaturesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402B0C5129917C6100C83BEF /* FaceFeaturesModel.swift */; };
 		402B0C542991966800C83BEF /* FaceCaptureDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402B0C532991966800C83BEF /* FaceCaptureDefinitions.swift */; };
@@ -38,7 +35,6 @@
 		402B0C832998B27A00C83BEF /* TODO.md in Resources */ = {isa = PBXBuildFile; fileRef = 402B0C822998B27A00C83BEF /* TODO.md */; };
 		402B0C852998BECD00C83BEF /* face_capture.json in Resources */ = {isa = PBXBuildFile; fileRef = 402B0C842998BECD00C83BEF /* face_capture.json */; };
 		40649B1B298E1E03002ABC33 /* splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 40649B1A298E1E03002ABC33 /* splashscreen.png */; };
-		407145CA29A68191009A9AE0 /* IdList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407145C929A68191009A9AE0 /* IdList.swift */; };
 		40A12B61297ABCFE00C2D246 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A12B60297ABCFE00C2D246 /* CameraViewController.swift */; };
 		40A12B63297ABE7900C2D246 /* ComponentCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A12B62297ABE7900C2D246 /* ComponentCaptureViewController.swift */; };
 		40A12B67297ADB9700C2D246 /* facial.json in Resources */ = {isa = PBXBuildFile; fileRef = 40A12B65297ADB9700C2D246 /* facial.json */; };
@@ -52,8 +48,6 @@
 		40C2951F298368F500731159 /* Messages.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40C29521298368F500731159 /* Messages.strings */; };
 		40C29528298848E400731159 /* PreviewFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C29527298848E400731159 /* PreviewFaceViewController.swift */; };
 		40CE3476299CB9AE00088228 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE3475299CB9AE00088228 /* UIColor.swift */; };
-		40CE347D299D2A2000088228 /* IdCaptureDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE347C299D2A2000088228 /* IdCaptureDefinitions.swift */; };
-		40CE347F299D2A8B00088228 /* IdCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE347E299D2A8B00088228 /* IdCapture.swift */; };
 		40CE3481299D2CAC00088228 /* IdFeaturesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE3480299D2CAC00088228 /* IdFeaturesModel.swift */; };
 		40CE3483299E1D1400088228 /* PreviewIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE3482299E1D1400088228 /* PreviewIdViewController.swift */; };
 		40DE57552988E53A0081192A /* FaceCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE57542988E53A0081192A /* FaceCapture.swift */; };
@@ -69,11 +63,11 @@
 		40F2EA84299A80630046F539 /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2EA83299A80630046F539 /* Orientation.swift */; };
 		40F2EA86299A893D0046F539 /* StyledUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2EA85299A893D0046F539 /* StyledUIView.swift */; };
 		40F2EA88299AB4DC0046F539 /* TasksCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2EA87299AB4DC0046F539 /* TasksCommon.swift */; };
+		69DDDF21E80E4D28F8D8A1A1 /* Pods_NubariumSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBBC9C547C9C38EF02F265C5 /* Pods_NubariumSDK.framework */; };
 		BB70D4DE209CF98500743DA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB70D4DD209CF98500743DA7 /* AppDelegate.swift */; };
 		BB70D4E3209CF98500743DA7 /* ComponentCapture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB70D4E1209CF98500743DA7 /* ComponentCapture.storyboard */; };
 		BB70D4E5209CF98500743DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB70D4E4209CF98500743DA7 /* Assets.xcassets */; };
 		BB70D4E8209CF98500743DA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB70D4E6209CF98500743DA7 /* LaunchScreen.storyboard */; };
-		E58BAF2412EE94F608295A30 /* Pods_NubariumSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7299B6ACE1EAAC6DDB7C729 /* Pods_NubariumSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -90,12 +84,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		02F88DA83C0E4F2504315C84 /* Pods-NubariumSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NubariumSDK.debug.xcconfig"; path = "Target Support Files/Pods-NubariumSDK/Pods-NubariumSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		31AD1F56DA5C4A3AC5C7765D /* Pods-NubariumSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NubariumSDK.debug.xcconfig"; path = "Target Support Files/Pods-NubariumSDK/Pods-NubariumSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		4005EC8429A7CBC7000CD4DB /* Configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Configuration.json; sourceTree = "<group>"; };
 		4005EC8629A7D94F000CD4DB /* StringCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCase.swift; sourceTree = "<group>"; };
-		40244ED529A0050200B3A9A9 /* IdEvaluation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdEvaluation.swift; sourceTree = "<group>"; };
-		40244ED729A0052300B3A9A9 /* IdDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdDetail.swift; sourceTree = "<group>"; };
-		40244ED929A0054D00B3A9A9 /* IdDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdDetector.swift; sourceTree = "<group>"; };
 		402B0C4D2990CE2B00C83BEF /* Levenshtein.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Levenshtein.swift; sourceTree = "<group>"; };
 		402B0C5129917C6100C83BEF /* FaceFeaturesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceFeaturesModel.swift; sourceTree = "<group>"; };
 		402B0C532991966800C83BEF /* FaceCaptureDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceCaptureDefinitions.swift; sourceTree = "<group>"; };
@@ -122,7 +113,6 @@
 		402B0C822998B27A00C83BEF /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
 		402B0C842998BECD00C83BEF /* face_capture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = face_capture.json; sourceTree = "<group>"; };
 		40649B1A298E1E03002ABC33 /* splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen.png; sourceTree = "<group>"; };
-		407145C929A68191009A9AE0 /* IdList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdList.swift; sourceTree = "<group>"; };
 		40A12B60297ABCFE00C2D246 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		40A12B62297ABE7900C2D246 /* ComponentCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentCaptureViewController.swift; sourceTree = "<group>"; };
 		40A12B65297ADB9700C2D246 /* facial.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = facial.json; sourceTree = "<group>"; };
@@ -137,8 +127,6 @@
 		40C29520298368F500731159 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Messages.strings; sourceTree = "<group>"; };
 		40C29527298848E400731159 /* PreviewFaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewFaceViewController.swift; sourceTree = "<group>"; };
 		40CE3475299CB9AE00088228 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		40CE347C299D2A2000088228 /* IdCaptureDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdCaptureDefinitions.swift; sourceTree = "<group>"; };
-		40CE347E299D2A8B00088228 /* IdCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdCapture.swift; sourceTree = "<group>"; };
 		40CE3480299D2CAC00088228 /* IdFeaturesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdFeaturesModel.swift; sourceTree = "<group>"; };
 		40CE3482299E1D1400088228 /* PreviewIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewIdViewController.swift; sourceTree = "<group>"; };
 		40DE57542988E53A0081192A /* FaceCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceCapture.swift; sourceTree = "<group>"; };
@@ -161,8 +149,8 @@
 		BB70D4E4209CF98500743DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB70D4E7209CF98500743DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB70D4E9209CF98500743DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7299B6ACE1EAAC6DDB7C729 /* Pods_NubariumSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NubariumSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F94E308717F1919F23780FC2 /* Pods-NubariumSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NubariumSDK.release.xcconfig"; path = "Target Support Files/Pods-NubariumSDK/Pods-NubariumSDK.release.xcconfig"; sourceTree = "<group>"; };
+		CBBC9C547C9C38EF02F265C5 /* Pods_NubariumSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NubariumSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFEDC12CD9B40B590C5EA7CE /* Pods-NubariumSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NubariumSDK.release.xcconfig"; path = "Target Support Files/Pods-NubariumSDK/Pods-NubariumSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E58BAF2412EE94F608295A30 /* Pods_NubariumSDK.framework in Frameworks */,
+				69DDDF21E80E4D28F8D8A1A1 /* Pods_NubariumSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,26 +221,6 @@
 				40EC86CB29A92BCB00CEEEF7 /* FaceProcessor.swift */,
 			);
 			path = FaceCapture;
-			sourceTree = "<group>";
-		};
-		40C2950C2982392700731159 /* IdCapture */ = {
-			isa = PBXGroup;
-			children = (
-				40244ED929A0054D00B3A9A9 /* IdDetector.swift */,
-				40244ED729A0052300B3A9A9 /* IdDetail.swift */,
-				40CE347E299D2A8B00088228 /* IdCapture.swift */,
-				40CE347C299D2A2000088228 /* IdCaptureDefinitions.swift */,
-				40244ED529A0050200B3A9A9 /* IdEvaluation.swift */,
-				407145C929A68191009A9AE0 /* IdList.swift */,
-			);
-			path = IdCapture;
-			sourceTree = "<group>";
-		};
-		40C2950D2982393300731159 /* VideoRecorder */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VideoRecorder;
 			sourceTree = "<group>";
 		};
 		40C2950E29823AAB00731159 /* Resources */ = {
@@ -364,10 +332,18 @@
 		7E5A388F18ED8175F3CD34BA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				02F88DA83C0E4F2504315C84 /* Pods-NubariumSDK.debug.xcconfig */,
-				F94E308717F1919F23780FC2 /* Pods-NubariumSDK.release.xcconfig */,
+				31AD1F56DA5C4A3AC5C7765D /* Pods-NubariumSDK.debug.xcconfig */,
+				EFEDC12CD9B40B590C5EA7CE /* Pods-NubariumSDK.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B944C84E79483CE48327573E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBBC9C547C9C38EF02F265C5 /* Pods_NubariumSDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BB70D4D1209CF98500743DA7 = {
@@ -381,7 +357,7 @@
 				BB70D4F1209D000A00743DA7 /* Supporting Files */,
 				BB70D4DB209CF98500743DA7 /* Products */,
 				7E5A388F18ED8175F3CD34BA /* Pods */,
-				D402C06088F57A27FDD5A097 /* Frameworks */,
+				B944C84E79483CE48327573E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -399,8 +375,6 @@
 				40DE57592989DA8F0081192A /* Base */,
 				40DE57562989D9D20081192A /* ViewControllers */,
 				40C2950B298238E500731159 /* FaceCapture */,
-				40C2950C2982392700731159 /* IdCapture */,
-				40C2950D2982393300731159 /* VideoRecorder */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -416,14 +390,6 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D402C06088F57A27FDD5A097 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C7299B6ACE1EAAC6DDB7C729 /* Pods_NubariumSDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -431,13 +397,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB70D4EC209CF98500743DA7 /* Build configuration list for PBXNativeTarget "NubariumSDK" */;
 			buildPhases = (
-				0BEFF12A71D0377CCE3E6482 /* [CP] Check Pods Manifest.lock */,
+				C7E1AFD6C77BE8C397A869D2 /* [CP] Check Pods Manifest.lock */,
 				BB70D4D6209CF98500743DA7 /* Sources */,
 				BB70D4D8209CF98500743DA7 /* Resources */,
 				C311EA74D989B49F18E635BE /* Frameworks */,
 				46D656782E6FA4AA00CA323C /* Embed Frameworks */,
-				5C3DC54D7E95A782833DD2DE /* [CP] Embed Pods Frameworks */,
-				01D5BF02E35D1BA13EB93855 /* [CP] Copy Pods Resources */,
+				10E8565C3488527C2B27737B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -514,25 +479,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01D5BF02E35D1BA13EB93855 /* [CP] Copy Pods Resources */ = {
+		10E8565C3488527C2B27737B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NubariumSDK/Pods-NubariumSDK-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MLKitFaceDetection/GoogleMVFaceDetectorResources.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-NubariumSDK/Pods-NubariumSDK-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Device/Device.framework",
+				"${BUILT_PRODUCTS_DIR}/Siesta/Siesta.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVFaceDetectorResources.bundle",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Device.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Siesta.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NubariumSDK/Pods-NubariumSDK-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NubariumSDK/Pods-NubariumSDK-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		0BEFF12A71D0377CCE3E6482 /* [CP] Check Pods Manifest.lock */ = {
+		C7E1AFD6C77BE8C397A869D2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -554,40 +523,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5C3DC54D7E95A782833DD2DE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NubariumSDK/Pods-NubariumSDK-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Device/Device.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
-				"${BUILT_PRODUCTS_DIR}/Siesta/Siesta.framework",
-				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Device.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Siesta.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NubariumSDK/Pods-NubariumSDK-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -600,7 +535,6 @@
 				40DE5769298B46650081192A /* RequestModel.swift in Sources */,
 				40DE5770298B8E600081192A /* ComponentInfo.swift in Sources */,
 				402B0C7429967A7B00C83BEF /* SdkComponent.swift in Sources */,
-				407145CA29A68191009A9AE0 /* IdList.swift in Sources */,
 				40DE5767298ACE2E0081192A /* ServiceSdk.swift in Sources */,
 				40C2950A2982089700731159 /* ImageExt.swift in Sources */,
 				40E7D80A299942C8005644F3 /* CommonCaptureViewController.swift in Sources */,
@@ -625,19 +559,14 @@
 				40A12B61297ABCFE00C2D246 /* CameraViewController.swift in Sources */,
 				402B0C5A2991D71000C83BEF /* ValidateTokenModel.swift in Sources */,
 				402B0C662995834300C83BEF /* LottieOverlay.swift in Sources */,
-				40CE347F299D2A8B00088228 /* IdCapture.swift in Sources */,
-				40244EDA29A0054D00B3A9A9 /* IdDetector.swift in Sources */,
-				40244ED629A0050200B3A9A9 /* IdEvaluation.swift in Sources */,
 				40B0F54329903012002B4A73 /* FaceList.swift in Sources */,
 				40C295152982FF6A00731159 /* Queue.swift in Sources */,
-				40244ED829A0052300B3A9A9 /* IdDetail.swift in Sources */,
 				40A12B63297ABE7900C2D246 /* ComponentCaptureViewController.swift in Sources */,
 				402B0C5C2991D7FB00C83BEF /* BiometricRequestResponseModel.swift in Sources */,
 				402B0C542991966800C83BEF /* FaceCaptureDefinitions.swift in Sources */,
 				40C295172983067400731159 /* ArrayFaceEvaluation.swift in Sources */,
 				BB70D4DE209CF98500743DA7 /* AppDelegate.swift in Sources */,
 				40F2EA86299A893D0046F539 /* StyledUIView.swift in Sources */,
-				40CE347D299D2A2000088228 /* IdCaptureDefinitions.swift in Sources */,
 				40F2EA88299AB4DC0046F539 /* TasksCommon.swift in Sources */,
 				402B0C4E2990CE2B00C83BEF /* Levenshtein.swift in Sources */,
 				40DE5782298CE62F0081192A /* MainViewController.swift in Sources */,
@@ -795,7 +724,7 @@
 		};
 		BB70D4ED209CF98500743DA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02F88DA83C0E4F2504315C84 /* Pods-NubariumSDK.debug.xcconfig */;
+			baseConfigurationReference = 31AD1F56DA5C4A3AC5C7765D /* Pods-NubariumSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -823,7 +752,7 @@
 		};
 		BB70D4EE209CF98500743DA7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F94E308717F1919F23780FC2 /* Pods-NubariumSDK.release.xcconfig */;
+			baseConfigurationReference = EFEDC12CD9B40B590C5EA7CE /* Pods-NubariumSDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

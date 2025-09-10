@@ -13,12 +13,12 @@ import AVKit
 class MainViewController: UIViewController {
     
     private var faceCapture:FaceCapture?
-    private var idCapture:IdCapture?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         faceCapture = FaceCapture(viewController: self)
-        idCapture = IdCapture(viewController: self)
+
     }
 
     private var comp = "";
@@ -29,7 +29,7 @@ class MainViewController: UIViewController {
             faceCapture!.process()
         }
         if comp == "id" {
-            idCapture!.process()
+
         }
 
     }
@@ -37,9 +37,6 @@ class MainViewController: UIViewController {
     
     // In case of Storyboard use
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-          if comp == "id" {
-              idCapture!.prepare(segue: segue)
-          }
           if comp == "face" {
               faceCapture!.prepare(segue: segue)
           }
@@ -85,36 +82,6 @@ class MainViewController: UIViewController {
     
     @IBAction func startIdCapture() {
         
-        // Configure properties
-                idCapture!.credentials(username: "amilcar.flores",password: "elpass")
-                //idCapture!.livenessRequired = true
-                //idCapture!.level = .medium
-                idCapture!.showPreview = true
-                idCapture!.showIntro = false
-                idCapture!.enableVideoHelp = false
-                idCapture!.enableTroubleshootHelp = false
-
-                idCapture!.timeout = 180
-                idCapture!.maxValidations = 4
-                idCapture!.allowCaptureOnFail = true
-                idCapture!.policyRules(allow:[], deny:[], order:[])
-                idCapture!.aditionalConfigurationParameters = [.helpVideoUrl:"",.troubleshootUrl:"", .showTroubleshootAfterFail:true, .countInvalidRuleAsFail: false ]
-                idCapture!.sideView = .back
-                
-                
-                // Configure response event listeners
-                idCapture!.onLoad = onLoadIdCapture
-                idCapture!.onInitError = onInitError
-                
-                // Configure response event listeners
-                idCapture!.onSuccess = onSuccess
-                idCapture!.onFail = onFail
-                idCapture!.onError = onError
-                
-                //idCapture!.messagesResource = "CustomIdCapture"
-                // Initialize component
-                idCapture!.initialize()
-                comp = "id"
         
     }
     
@@ -131,7 +98,7 @@ class MainViewController: UIViewController {
     func onLoadIdCapture(id: String){
         print("Initilized with ID " + id)
         // Start and show ViewController component
-        idCapture!.start()
+        
 
     }
     
@@ -167,34 +134,6 @@ class MainViewController: UIViewController {
         print("Message", message)
     }
     
-    /* IdCapture Event Listeners */
-        func onInitError(error: IdCaptureInitError, msg: String){
-            print("Init Error ->" ,error)
-        }
-        
-        func onSuccess(result : IdCaptureResult,front: UIImage, back: UIImage){
-            print("OnSuccess output")
-            print("Confidence", result.confidence)
-            print("Result", result.result)
-            //print("width", area.size.width)
-            //print("height", area.size.height)
-            //print("Size",area.size.width, faceCaptureResponse.area.size.height)
-        }
-        
-        func onFail(result : IdCaptureResult, idCaptureReasonFail: IdCaptureReasonFail, reason: String){
-            print("OnFail")
-            print("Confidence", result.confidence)
-            print("Result", result.result)
-            print("Fail", idCaptureReasonFail)
-            print("Reason", reason)
-        }
-        
-        
-        func onError(idCaptureError: IdCaptureError, message: String){
-            print("OnError")
-            print("Error", idCaptureError)
-            print("Message", message)
-        }
     
     // SwiftUI Pendent
     

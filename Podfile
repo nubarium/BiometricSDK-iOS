@@ -1,12 +1,9 @@
 platform :ios, '13.0'
 use_frameworks!
 
-pod 'GoogleMLKit/FaceDetection'
-# pod 'GoogleMLKit/TextRecognition'
 pod 'lottie-ios', '3.5.0'
 pod 'Siesta', '~> 1.0'
 pod 'Device', '~> 3.3.0'
-# pod 'Schedule', '~> 2.0'
 
 target 'NubariumSDK' do
 end

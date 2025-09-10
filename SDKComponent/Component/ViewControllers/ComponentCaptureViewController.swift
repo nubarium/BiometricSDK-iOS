@@ -7,9 +7,7 @@
 //
 import UIKit
 import AVFoundation
-import MLKitFaceDetection
 //import MLKitTextRecognition
-import MLKitVision
 import QuartzCore
 import CoreMedia
 import Vision
@@ -24,10 +22,8 @@ class ComponentCaptureViewController: CommonCaptureViewController {
     private var lastValidateFace: ValidateFaceModel?
 
     // Face
-    let faceDetectorOptions = FaceDetectorOptions()
-    var faceDetector = FaceDetector.faceDetector()
+    
     var bestFace : FaceDetail?
-    var bestDocument : [String: IdDetail]?
     
     private let maxNumFacesOk = 25
     private let faceEvaluation = FaceEvaluation()
@@ -38,8 +34,7 @@ class ComponentCaptureViewController: CommonCaptureViewController {
     private var statusValidateFace: StatusRequest = .notStarted
 
     // Id Elements
-    private var idCaptureResponse : IdCaptureResponse = IdCaptureResponse()
-    var idCaptureOptions : IdCaptureOptions = IdCaptureOptions()
+    
     
     private var lastIdFeatures: IdFeaturesModel?
     private var lastValidateId: ValidateIdModel?
@@ -48,7 +43,7 @@ class ComponentCaptureViewController: CommonCaptureViewController {
     private var statusIdCheckFeatures: StatusRequest = .notStarted
     private var statusValidateId: StatusRequest = .notStarted
     
-    private let idEvaluation = IdEvaluation()
+
     //private var idCaptureResponse : IdCaptureResponse = IdCaptureResponse()
 
     
@@ -97,29 +92,16 @@ class ComponentCaptureViewController: CommonCaptureViewController {
                 destinationVC.faceDetail = self.bestFace
                 destinationVC.delegate = self
             }
-            if(component == .idCapture){
-                let destinationVC = segue.destination as! PreviewIdViewController
-                destinationVC.documentDetail = self.bestDocument
-                destinationVC.delegate = self
-            }
+            
         }
     }
     
     override func returnToParent(){
         // Return face capture to top
         print("faceresponse", faceCaptureResponse.faceCaptureResult.result)
-        print("idresponse", idCaptureResponse.result.result)
         if ( faceCaptureResponse.faceCaptureResult.result != "unevaluated" ){ //( component == .faceCapture ) {
             print("respondo facecpature")
             self.delegate?.respond(response: faceCaptureResponse, component: .faceCapture)
-        }
-        print("idresponse", idCaptureResponse.result.result)
-        if ( idCaptureResponse.result.result != "unevaluated" ) { //component == .idCapture ) {
-            print("respondo idcapture")
-            self.delegate?.respond(response: idCaptureResponse, component: .idCapture)
-        }
-        if ( component == .videoRecorder ) {
-            self.delegate?.respond(response: faceCaptureResponse, component: .videoRecorder)
         }
         super.returnToParent()
     }
@@ -131,14 +113,7 @@ class ComponentCaptureViewController: CommonCaptureViewController {
     override func setupMl(){
         if(component == .faceCapture || component == .videoRecorder){
             //CONTOUR_MODE_NONE
-            faceDetectorOptions.landmarkMode = .none
-            faceDetectorOptions.classificationMode = .all
-            faceDetectorOptions.performanceMode = .fast
-            faceDetectorOptions.contourMode = .none
-            //options.minFaceSize
-            faceDetectorOptions.minFaceSize = CGFloat(0.45)
-            // [END config_face]
-            faceDetector = FaceDetector.faceDetector(options: faceDetectorOptions)
+
         }
     }
     
@@ -158,7 +133,7 @@ class ComponentCaptureViewController: CommonCaptureViewController {
             counterStaticEye = 0
         }
         if(currentTask.0.type == .idCapture ){
-            idEvaluation.reset()
+            
         }
         countResets = 0
         counterFail = 0
@@ -171,8 +146,7 @@ class ComponentCaptureViewController: CommonCaptureViewController {
         statusFaceCheckFeatures = .notStarted
         counterStaticEye = 0
         
-        // Id Component
-        idEvaluation.reset()
+        
         
         
         /*if(currentTask.0.type == .faceCapture ){
@@ -195,7 +169,7 @@ class ComponentCaptureViewController: CommonCaptureViewController {
             counterStaticEye = 0
         }
         if(currentTask.0.type == .idCapture ){
-            idEvaluation.reset()
+            
         }
         countResets = 0
         counterFail = 0
@@ -272,7 +246,7 @@ class ComponentCaptureViewController: CommonCaptureViewController {
             self.faceEvaluation.reset()
         }
         if(currentTask.0.type == .idCapture ){
-            self.idEvaluation.reset()
+            
         }
     }
     
@@ -321,13 +295,6 @@ class ComponentCaptureViewController: CommonCaptureViewController {
         //outputRetro.append(contentsOf: retro)
         outputRetro.append(contentsOf: features)
         
-        //self.idCaptureResponse = IdCaptureResponse()
-        self.idCaptureResponse.responseEventType = .success
-        self.idCaptureResponse.result.result = "pass" //lastValidateFace!.result!
-        self.idCaptureResponse.result.confidence = 1.0 // lastValidateFace!.confidence!
-        self.idCaptureResponse.result.retro = outputRetro
-        self.idCaptureResponse.reasonFail = .none
-        self.idCaptureResponse.error = .none
         
         //let image : UIImage = self.idEvaluation.bestFace().frameImage()
         
@@ -371,129 +338,11 @@ class ComponentCaptureViewController: CommonCaptureViewController {
     }
     
     func detectId(sampleBuffer: CMSampleBuffer){
-        let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)
-        let image = UIImage(pixelBuffer: pixelBuffer!)
-        let requestHandler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer!, orientation: .left ) // .right
-        let idDetector: IdDetector = IdDetector(area: self.areaRectScale)
-        
-        let recognizeTextRequest = VNRecognizeTextRequest { (request, error) in
-            if(error == nil){
-                let idDetail = idDetector.process(request: request, image: image!)
-                if(idDetail == nil){
-                    print("Es nulo, no hay ID")
-                }else{
-                    print("Id Detectado", idDetail)
-                    if(self.blockDetect == false){
-                        print("1")
-                        if(self.idEvaluation.count() < 3){
-                            print("2")
-                            self.idEvaluation.addId(id: idDetail!)
-                        }else{
-                            print("3")
-                            self.blockDetect = true
-                            self.validateIdRequest()
-                            //let str = self.idEvaluation.bestFace().frameImage().convertImageToBase64String()
-                            //print(str)
-                        }
-                    }else{
-                        print("4")
-                        //print("ignoro")
-                    }
-                }
-            }
-        }
-        recognizeTextRequest.recognitionLevel = .accurate
-
-        DispatchQueue.global(qos: .userInitiated).async {
-            do {
-                try requestHandler.perform([recognizeTextRequest])
-            } catch {
-                print(error)
-            }
-        }
+      
     }
 
     func validateIdRequest(){
-        print("*** validateIdRequest")
-        pauseWhileValidate()
-        print("*** validateIdRequesasdadadst")
-        
-        DispatchQueue.main.async {
-            LoadingOverlay.shared.showOverlay()
-            // Any other UI updates go here
-        }
-        
-           
-        
-        print("*** 1")
-        //self.idEvaluation.bestFace().frameImage().convertImageToBase64String()
-        let image : UIImage = self.idEvaluation.bestFace().frameImage()
-        print("*** 2")
-        guard let imageData = image.jpegData(compressionQuality: 0.50) else { return  }
-        print("*** 3")
-        let img = UIImage(data: imageData)
-        print("*** 4")
-        print("conteo", tasksToDo.all().count)
-        if(tasksToDo.all().count == 1){
-            self.idCaptureResponse.front = img!
-        }else{
-            self.idCaptureResponse.back = img!
-        }
-        pauseWhileValidate()
-        pauseWhileValidate()
-        DispatchQueue.main.async {
-            LoadingOverlay.shared.hideOverlayView()
-            // Any other UI updates go here
-        }
-        
-        // Completa la tarea internamente y en caso
-        processSuccessId();
-        
-        
-        //let strImage = "data:image/jpeg;base64," +  img!.convertImageToBase64String()
-        //print(strImage)
-        //self.processSuccessId()
-        print("*** completo tarea")
-        //self.completeTask()
-        print("*** siguiente tarea")
-        
        
-        
-       
-        /*
-        let apiRequest = ServiceSdk.validateFace(id: requestId, face: strImage, level: AntispoofingLevel.medium, allow: [], deny: [], order: [])
-        apiRequest.start()
-        statusValidateFace = .started
-        apiRequest.onSuccess { entity in
-            self.statusValidateFace = .completed
-            
-            LoadingOverlay.shared.hideOverlayView()
-            
-            let response:ValidateFaceModel = (entity.content as! ValidateFaceModel)
-            print("response validate", response)
-            if(response.status.lowercased() == "ok"){
-                if(response.features != nil){
-                    self.lastFaceFeatures = response.features
-                }
-                if(response.result?.lowercased() == "pass" || response.result?.lowercased() == "warning"){
-                    self.lastValidateFace = response
-                    self.processSuccessFace()
-                }else{
-                    self.counterFail += 1
-                    //low_evaluation, facemask_not_allowed, glasses_not_allowed, no_face
-                    self.processFailFace(retro: self.retroFaceFeatures(), faceCaptureReasonFail: FaceCaptureReasonFail.livenessFail, score: response.confidence!)
-                }
-            }else{
-                self.lastValidateFace = response
-                self.statusValidateFace = .failed
-            }
-        }
-        apiRequest.onFailure { error in
-            self.statusValidateFace = .failed
-            print("hard error", error)
-            LoadingOverlay.shared.hideOverlayView()
-        }
-        */
     }
     
     
